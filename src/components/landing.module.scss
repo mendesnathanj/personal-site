@@ -1,0 +1,68 @@
+$rale: 'Raleway', sans-serif;
+$mont: 'Montserrat', sans-serif;
+$link: #c9daea;
+$title: #F7F0F5;
+
+.landing {
+  margin-top: 5rem;
+}
+
+.title {
+  position: relative;
+  font-family: $rale;
+  color: $title;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+.greeting {
+  font-family: $rale;
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: #FC9F5B;
+}
+
+.tagline {
+  font-family: $mont;
+  font-weight: 700;
+  color: $title;
+}
+
+.intro {
+  margin-top: 1.25rem;
+  font-family: $mont;
+  font-weight: 500;
+  color: #d6cfcb;
+  letter-spacing: 1px;
+  font-size: 0.6em;
+  line-height: 0.8rem;
+}
+
+.contact-container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact {
+  display: inline;
+  font-family: $mont;
+  font-weight: 700;
+  color: $link;
+  letter-spacing: 0.5px;
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  text-decoration: none;
+  border: 2px solid $link;
+  border-radius: 5px;
+  transition: all 250ms ease-in-out;
+}
+
+$hover: darken($link, 20%);
+
+.contact:hover {
+  color: $title;
+  background-color: $hover;
+  border-color: $hover;
+}
