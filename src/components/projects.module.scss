@@ -58,6 +58,13 @@ $link: #c9daea;
   transition: all 500ms ease-in-out;
 }
 
+.project-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
 .expand {
   max-height: 800px;
 }

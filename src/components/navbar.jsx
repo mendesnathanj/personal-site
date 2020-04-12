@@ -12,12 +12,15 @@ class Navbar extends React.Component {
 
     this.state = { navItems: ['skills', 'projects', 'experience', 'contact'], expanded: false };
     this.toggleExpand = this.toggleExpand.bind(this);
+  }
 
-    window.addEventListener('resize', () => this.setState({ expanded: false }))
+  componentDidMount() {
+    window.addEventListener('resize', () => this.setState({ expanded: false }));
   }
 
   toggleExpand() {
-    if (window.innerWidth < 1000) this.setState({ expanded: !this.state.expanded });
+    if (window)
+      if (window.innerWidth < 1000) this.setState({ expanded: !this.state.expanded });
   }
 
   render() {
@@ -41,33 +44,3 @@ class Navbar extends React.Component {
 };
 
 export default Navbar;
-
-
-// export default () => {
-//   let navItems = useStaticQuery(
-//     graphql`
-//       query {
-//         site {
-//           siteMetadata {
-//             navItems
-//           }
-//         }
-//       }
-//     `
-//   ).site.siteMetadata.navItems;
-
-//   navItems = navItems.map(item => <NavItem content={item} />);
-
-//   return (
-//     <div className={styles.navWrapper}>
-//       <Fade delay={1000}>
-//         <nav className={styles.navbar}>
-//           <FontAwesomeIcon icon={faBars} />
-//           <ul>
-//             { navItems }
-//           </ul>
-//         </nav>
-//       </Fade>
-//     </div>
-//   );
-// };

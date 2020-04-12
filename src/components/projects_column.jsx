@@ -3,7 +3,7 @@ import styles from './projects.module.scss';
 
 export default ({ projects }) => {
   return (
-    <div>
+    <div className={styles.projectColumn}>
       {projects}
     </div>
   );

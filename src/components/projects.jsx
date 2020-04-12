@@ -4,9 +4,7 @@ import styles from './projects.module.scss';
 import Project from './project';
 import ProjectsColumn from './projects_column';
 
-const projectDelay = window.innerHeight > 600 && window.innerWidth < 1000 ? 1000 : 0;
-
-export default () => {
+export default ({ projectDelay }) => {
   let projects = useStaticQuery(
     graphql`
       query {

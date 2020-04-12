@@ -120,7 +120,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-s3',
       options: {
-        bucketName: 'nathanmendes.com'
+        bucketName: 'nathanmendes.com',
+        acl: null,
       }
     }
   ],
