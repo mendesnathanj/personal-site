@@ -1,0 +1,73 @@
+$bg: #33312e;
+$color: #fc9f5b;
+$mont: 'Montserrat', sans-serif;
+
+.navWrapper {
+  position: fixed;
+  top: 0;
+  z-index: 9000;
+  width: 100%;
+  background-color: $bg;
+  transition: all 300ms ease-in-out;
+  padding-left: 1rem;
+}
+
+.navbar {
+  padding: 1.5rem 0.25rem 1rem;
+
+  > svg {
+    color: $color;
+    font-size: 1.35rem;
+  }
+}
+
+.navList {
+  display: none;
+}
+
+.expanded {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.nav-item {
+  display: block;
+  font-family: $mont;
+  color: $color;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+  padding: 0.75rem 0rem;
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  .navWrapper {
+    padding-left: 2rem;
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .navbar {
+    > svg {
+      display: none;
+    }
+  }
+
+  .navList {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    > li {
+      &:last-child {
+        margin-right: 3.5rem;
+      }
+    }
+  }
+
+  .nav-item {
+    margin: 0 1rem;
+  }
+}

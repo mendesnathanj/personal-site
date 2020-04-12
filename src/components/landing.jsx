@@ -1,6 +1,5 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import './animations.scss';
 import styles from './landing.module.scss';
 import Greeting from './greeting';
 import Title from './title';
@@ -28,12 +27,12 @@ export default () => {
   ).site.siteMetadata;
 
   return (
-    <div className={`fadeIn ${styles.landing}`}>
+    <div className={styles.landing}>
       <Greeting text={data.greeting} />
       <Title title={data.landingTitle} />
       <Tagline tagline={data.tagline} />
-      <Intro intro={data.intro} />
-      <ContactBtn email={data.email} text={data.contactText} />
+      <Intro intro={data.intro} delay={1000} />
+      <ContactBtn email={data.email} text={data.contactText} delay={1000} />
     </div>
   );
 };

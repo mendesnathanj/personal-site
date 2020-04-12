@@ -1,0 +1,59 @@
+$text: #d6cfcb;
+$cons: 'Inconsolata', sans-serif;
+$monts: 'Montserrat', sans-serif;
+
+.skills-section {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  position: relative;
+
+  > .offset {
+    position: absolute;
+    top: -65px;
+  }
+}
+
+.description {
+  color: $text;
+  font-family: $monts;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  margin-bottom: 1rem;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (min-width: 600px) {
+  .skills-container {
+    justify-content: flex-start;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    line-height: 1.25rem;
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .skills-section {
+    padding-bottom: 5rem;
+
+    > .offset {
+      position: absolute;
+      top: -100px;
+    }
+  }
+
+  .skills-container {
+    justify-content: flex-start;
+  }
+
+  .description {
+    font-size: 1.15rem;
+    line-height: 1.25rem;
+  }
+}

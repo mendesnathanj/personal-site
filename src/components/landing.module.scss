@@ -21,12 +21,14 @@ $title: #F7F0F5;
   font-size: 0.9rem;
   font-weight: 900;
   color: #FC9F5B;
+  margin-left: 3px;
 }
 
 .tagline {
   font-family: $mont;
   font-weight: 700;
   color: $title;
+  margin-left: 3px;
 }
 
 .intro {
@@ -35,8 +37,12 @@ $title: #F7F0F5;
   font-weight: 500;
   color: #d6cfcb;
   letter-spacing: 1px;
-  font-size: 0.6em;
-  line-height: 0.8rem;
+  font-size: 0.75em;
+  line-height: 1rem;
+}
+
+.bigger {
+  font-size: 0.9rem;
 }
 
 .contact-container {
@@ -65,4 +71,67 @@ $hover: darken($link, 20%);
   color: $title;
   background-color: $hover;
   border-color: $hover;
+}
+
+@media (min-width: 600px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .greeting {
+    font-size: 1rem;
+  }
+
+  .tagline {
+    font-size: 1.25rem;
+  }
+
+  .contact {
+    font-size: 0.9rem;
+  }
+
+  .intro {
+    font-size: 0.9rem;
+    line-height: 1.15rem;
+  }
+
+  .bigger {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .landing {
+    height: 40vh;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .greeting {
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+  }
+
+  .tagline {
+    font-size: 2rem;
+  }
+
+  .contact-container {
+    justify-content: flex-start;
+  }
+
+  .contact {
+    font-size: 1.1rem;
+  }
+
+  .intro {
+    font-size: 1.15rem;
+    line-height: 1.4rem;
+  }
+
+  .bigger {
+    font-size: 1.3rem;
+  }
 }

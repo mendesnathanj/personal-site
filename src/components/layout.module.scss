@@ -1,3 +1,17 @@
 .layout {
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 1rem;
+}
+
+@media (min-width: 600px) {
+  .layout {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .layout {
+    padding: 3rem;
+  }
 }

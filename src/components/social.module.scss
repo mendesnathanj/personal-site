@@ -1,0 +1,41 @@
+$color: #fc9f5b;
+
+.social-wrapper {
+  position: fixed;
+  z-index: 9001;
+  right: 0;
+  top: 25px;
+}
+
+.social-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.item {
+  margin-right: 0.5rem;
+
+  > a {
+    padding: 0.75rem;
+    color: $color;
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .social-wrapper {
+    top: 100px;
+  }
+
+  .social-nav {
+    flex-direction: column;
+  }
+
+  .item {
+    margin-top: 2rem;
+
+    > a {
+      font-size: 1.5rem;
+    }
+  }
+}

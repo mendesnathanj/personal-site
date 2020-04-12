@@ -1,0 +1,70 @@
+$text: #d6cfcb;
+$cons: 'Inconsolata', sans-serif;
+$mont: 'Montserrat', sans-serif;
+
+.bullet {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-family: $cons;
+  color: $text;
+  padding: 0.5rem;
+
+  > svg {
+    font-size: 0.95rem;
+    color: #ffc1cf;
+    padding-right: 0.5rem;
+  }
+}
+
+.experiences-container {
+  &:first-child {
+    padding-top: 2rem;
+  }
+
+  padding-bottom: 2rem;
+}
+
+.bullet-container, .experiences-container {
+  > .bullet {
+    font-family: $mont;
+    align-items: flex-start;
+    font-size: 0.75rem;
+    line-height: 1.15rem;
+    letter-spacing: 0.5px;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .bullet {
+    font-size: 1rem;
+
+    > svg {
+      font-size: 1.05rem;
+    }
+  }
+
+  .experiences-container {
+    > .bullet {
+      font-size: 0.85rem;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .bullet {
+    font-size: 1.15rem;
+
+    > svg {
+      font-size: 1.2rem;
+    }
+  }
+
+  .experiences-container {
+    > .bullet {
+      font-size: 0.95rem;
+      line-height: 1.5rem;
+    }
+  }
+}

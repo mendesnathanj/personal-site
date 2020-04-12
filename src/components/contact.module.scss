@@ -1,0 +1,52 @@
+$header-color: #fc9f5b;
+$content-color: #d6cfcb;
+$rale: 'Raleway', sans-serif;
+$mont: 'Montserrat', sans-serif;
+
+.contact-section-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5rem;
+}
+
+.header {
+  color: $header-color;
+  font-family: $rale;
+  font-weight: 900;
+  letter-spacing: 0.75px;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.content {
+  font-family: $mont;
+  color: $content-color;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 1.15rem;
+}
+
+
+@media (min-width: 600px) {
+  .header {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+  }
+}
+
+
+@media (min-width: 600px) {
+  .header {
+    font-size: 1.85rem;
+    margin-bottom: 1.15rem;
+  }
+
+  .content {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}

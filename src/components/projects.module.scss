@@ -1,0 +1,134 @@
+$mont: 'Montserrat', sans-serif;
+$title-color: #F7F0F5;
+$content-color: #D6CFCB;
+$background-color: #33312e;
+$link: #c9daea;
+
+.projects-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+  > .offset {
+    position: absolute;
+    top: -65px;
+  }
+}
+
+.project-container {
+  position: relative;
+  width: 90%;
+  max-width: 350px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.links {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  top: -0.8rem;
+  left: 60%;
+  z-index: 1;
+
+  > .link {
+    background-color: lighten(#33312e, 0.4%);
+    font-size: 1.5rem;
+    color: $link;
+    padding: 1rem;
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+      color: lighten($link, 50%);
+    }
+  }
+}
+
+.project {
+  position: relative;
+  min-height: 320px;
+  max-height: 320px;
+  border: 2px solid $content-color;
+  border-radius: 5px;
+  padding: 1rem;
+  overflow: hidden;
+  transition: all 500ms ease-in-out;
+}
+
+.expand {
+  max-height: 800px;
+}
+
+.title {
+  font-family: $mont;
+  color: $title-color;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.stack {
+  font-family: $mont;
+  color: $content-color;
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+.description {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: $content-color;
+  font-family: $mont;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.15rem;
+}
+
+.icon-container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lighten($background-color, 0.3%);
+  z-index: 1;
+  cursor: pointer;
+
+  > svg {
+    color: $link;
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 760px) {
+  .projects-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 1000px) {
+  .projects-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-bottom: 5rem;
+    position: relative;
+
+    > .offset {
+      top: -100px;
+    }
+  }
+
+  .project-container {
+    max-width: 450px;
+  }
+}

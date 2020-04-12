@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 
 
 export default ({ title }) => (
-  <Fade right cascade>
+  <Fade>
     <h1 className={styles.title}>{ title }</h1>
   </Fade>
 );
