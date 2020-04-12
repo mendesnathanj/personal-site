@@ -1,0 +1,8 @@
+@import 'reset';
+@import 'typography';
+
+$main-bg: #33312E;
+
+html, body {
+  background-color: $main-bg;
+}
