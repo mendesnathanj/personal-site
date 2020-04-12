@@ -74,7 +74,7 @@ module.exports = {
       },
       {
         title: 'My Personal Website',
-        github: '#',
+        github: 'https://github.com/mendesnathanj/personal-site',
         live: 'http://nathanmendes.com/',
         stack: ['Gatsby.js', 'React', 'React-Reveal'],
         description: 'My personal portfolio website',
