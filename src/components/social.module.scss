@@ -19,6 +19,15 @@ $color: #fc9f5b;
     padding: 0.75rem;
     color: $color;
     font-size: 1.25rem;
+
+    > svg {
+      transition: all 250ms ease-in-out;
+
+      &:hover {
+        transform: scale(1.25);
+        color: lighten($color, 25%);
+      }
+    }
   }
 }
 

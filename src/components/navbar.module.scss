@@ -39,6 +39,12 @@ $mont: 'Montserrat', sans-serif;
   font-size: 0.9rem;
   padding: 0.75rem 0rem;
   text-decoration: none;
+
+  transition: all 250ms ease-in-out;
+
+  &:hover {
+    color: lighten($color, 25%);
+  }
 }
 
 @media (min-width: 600px) {
@@ -69,5 +75,9 @@ $mont: 'Montserrat', sans-serif;
 
   .nav-item {
     margin: 0 1rem;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }
