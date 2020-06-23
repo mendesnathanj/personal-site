@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 export default ({ email, text, delay }) => (
   <Fade delay={!delay ? 0 : delay}>
     <div className={styles.contactContainer}>
-      <a className={styles.contact} rel="noopener" target="_blank" href={`mailto:${email}`}>{text}</a>
+      <a className={styles.contact} rel="noopener noreferrer" target="_blank" href={`mailto:${email}`}>{text}</a>
     </div>
   </Fade>
 );

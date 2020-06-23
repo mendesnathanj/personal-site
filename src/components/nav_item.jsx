@@ -26,7 +26,7 @@ class NavItem extends React.Component {
 
     return (
       <Fade delay={delay + itemDelay}>
-        <li><a onClick={toggle} rel="noopener" className={styles.navItem} href={`#${content}`}>{content}</a></li>
+        <li><a onClick={toggle} rel="noopener noreferrer" className={styles.navItem} href={`#${content}`}>{content}</a></li>
       </Fade>
     )
   }

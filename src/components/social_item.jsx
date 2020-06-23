@@ -29,7 +29,7 @@ class SocialItem extends React.Component {
     else icon = faGithub;
 
     return (
-      <Fade delay={delay + itemDelay}><li className={styles.item}><a rel="noopener" href={url} target="_blank"><FontAwesomeIcon icon={icon} /></a></li></Fade>
+      <Fade delay={delay + itemDelay}><li className={styles.item}><a rel="noopener noreferrer" href={url} target="_blank"><FontAwesomeIcon icon={icon} /></a></li></Fade>
     )
   }
 }

@@ -32,8 +32,8 @@ class Project extends React.Component {
       <Fade delay={delay}>
         <div className={styles.projectContainer}>
           <div className={styles.links}>
-            <a className={styles.link} rel="noopener" target="_blank" href={project.github}><FontAwesomeIcon icon={faGithub} /></a>
-            <a className={styles.link} rel="noopener" target="_blank" href={project.live}><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+            <a className={styles.link} rel="noopener noreferrer" target="_blank" href={project.github}><FontAwesomeIcon icon={faGithub} /></a>
+            <a className={styles.link} rel="noopener noreferrer" target="_blank" href={project.live}><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
           </div>
           <div className={`${styles.project} ${expandClass}`}>
             <h3 className={styles.title}>{project.title}</h3>
