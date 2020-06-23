@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Layout from '../components/layout';
 import Landing from '../components/landing';
 import Skills from '../components/skills';
@@ -32,6 +33,12 @@ class Index extends React.Component {
 
     return (
       <div>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Nathan Mendes</title>
+          <link rel="canonical" href="http://nathanmendes.com/" />
+          <meta name="description" content="My name is Nathan Mendes. I'm a full stack software engineer experienced in Ruby on Rails, React.js and Redux. Hire me today!" />
+        </Helmet>
         <Navbar />
         <SocialNav />
         <Layout>

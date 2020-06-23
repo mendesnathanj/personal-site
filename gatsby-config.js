@@ -123,6 +123,7 @@ module.exports = {
         bucketName: 'nathanmendes.com',
         acl: null,
       }
-    }
+    },
+    `gatsby-plugin-react-helmet`
   ],
 }
